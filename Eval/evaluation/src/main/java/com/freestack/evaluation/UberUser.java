@@ -42,4 +42,7 @@ public class UberUser {
         this.fisrtname = fisrtname;
         this.lastname = lastname;
     }
+
+    public UberUser() {
+    }
 }

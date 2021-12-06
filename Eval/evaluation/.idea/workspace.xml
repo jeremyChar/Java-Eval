@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17f7640b-cf78-448a-92bb-97c46a9f54b1" name="Changes" comment="deplacement du circleCI" />
+    <list default="true" id="17f7640b-cf78-448a-92bb-97c46a9f54b1" name="Changes" comment="deplacement du circleCI">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/freestack/evaluation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freestack/evaluation/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/freestack/evaluation/UberApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freestack/evaluation/UberApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/freestack/evaluation/UberDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freestack/evaluation/UberDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/freestack/evaluation/UberUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freestack/evaluation/UberUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freestack/evaluation/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freestack/evaluation/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freestack/evaluation/UberApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freestack/evaluation/UberApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freestack/evaluation/UberDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freestack/evaluation/UberDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freestack/evaluation/UberUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freestack/evaluation/UberUser.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,6 +85,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="deplacement du circleCI" />

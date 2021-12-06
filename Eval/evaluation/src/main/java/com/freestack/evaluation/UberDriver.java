@@ -51,4 +51,7 @@ public class UberDriver {
         this.firstname = firstname;
         this.lastname = lastname;
     }
+
+    public UberDriver() {
+    }
 }
