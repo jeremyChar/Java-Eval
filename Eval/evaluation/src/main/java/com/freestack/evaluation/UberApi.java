@@ -59,8 +59,9 @@ public class UberApi {
         Query query = entityManager.createQuery("SELECT b FROM Booking b WHERE b.id = :id");
         Booking bookingbd = (Booking) query.setParameter("id",booking1.getId()).getSingleResult();
         booking1.setEndOfTheBooking(Instant.now());
-        Query query1 = entityManager.createQuery("SELECT d FROM UberDriver d WHERE d.id = :id");
-        UberDriver driver = (UberDriver) query1.setParameter("id", booking1.getDriver().getId()).getSingleResult();
+        UberDriver driver = bookingbd.getDriver();
+        //Query query1 = entityManager.createQuery("SELECT d FROM UberDriver d WHERE d.id = :id");
+        //UberDriver driver = (UberDriver) query1.setParameter("id", booking1.getDriver().getId()).getSingleResult();
         driver.setAvailable(true);
         entityManager.merge(booking1);
         entityManager.getTransaction().commit();
@@ -100,7 +101,13 @@ public class UberApi {
     public static float meanScore(UberDriver uberDriver) {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         entityManager.getTransaction().begin();
-        Query query = entityManager.createQuery("SELECT b FROM Booking b");
+        
+        Query query = em.createQuery("SELECT AVG(b.evaluation) FROM Booking b WHERE b.uberDriver= :uberD");
+        query.setParameter("uberD", uberDriver);
+        Double result = (Double) query.getSingleResult();
+        float mean = result.floatValue();
+        
+        /*Query query = entityManager.createQuery("SELECT b FROM Booking b");
         List<Booking> bookings = query.getResultList();
         Integer mean = 0;
         Integer total = 0;
@@ -113,7 +120,7 @@ public class UberApi {
                 mean = total / compteur;
             }
         }
-        return mean;
+        return mean;*/
     }
 }
 
