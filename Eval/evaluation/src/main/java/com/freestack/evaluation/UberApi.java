@@ -79,13 +79,12 @@ public class UberApi {
         }
 
     public static List<Booking> listDriverBookings(UberDriver uberDriver) {
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
-        entityManager.getTransaction().begin();
-        Query query = entityManager.createQuery("SELECT b FROM Booking b ");
-        List<Booking> bookings = query.getResultList();
-        entityManager.getTransaction().commit();
-        entityManager.close();
-        return bookings;
+        EntityManager em = emf.createEntityManager();
+        List<Booking> driverBookings = (List<Booking>) em.createQuery("SELECT b FROM Booking b where b.uberDriver = :uberDriver")
+            .setParameter("uberDriver", uberDriver)
+            .getResultList();
+        em.close();
+        return driverBookings;
     }
 
     public static List<Booking> listUnfinishedBookings() {
